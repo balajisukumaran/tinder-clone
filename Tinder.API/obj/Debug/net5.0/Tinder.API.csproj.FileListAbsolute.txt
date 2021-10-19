@@ -22,7 +22,6 @@ C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Mi
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -59,3 +58,4 @@ C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\obj\Debug\net5.0\Ti
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\obj\Debug\net5.0\ref\Tinder.API.dll
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\obj\Debug\net5.0\Tinder.API.pdb
 C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\obj\Debug\net5.0\Tinder.API.genruntimeconfig.cache
+C:\Users\balaj\OneDrive\Desktop\repo\tinder-clone\Tinder.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
