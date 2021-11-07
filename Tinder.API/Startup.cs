@@ -17,6 +17,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
+using Tinder.API.Helpers;
 
 namespace Tinder.API
 {
@@ -63,7 +66,18 @@ namespace Tinder.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tinder.API v1"));
             }
-
+            else{
+                app.UseExceptionHandler(builder=>{
+                    builder.Run(async context => {
+                        context.Response.StatusCode=(int)System.Net.HttpStatusCode.InternalServerError;
+                        var error=context.Features.Get<IExceptionHandlerFeature>();
+                        if(error != null){
+                            context.Response.AddApplicationError(error.Error.Message);
+                            await context.Response.WriteAsync(error.Error.Message);
+                        }
+                    });
+                });
+            }
             // app.UseHttpsRedirection();
             app.UseCors(x=>x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseRouting();

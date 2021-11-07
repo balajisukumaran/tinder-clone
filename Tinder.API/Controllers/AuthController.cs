@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using System.IdentityModel.Tokens.Jwt;
+using System;
 
 namespace Tinder.API.Controllers
 {
@@ -42,11 +43,9 @@ namespace Tinder.API.Controllers
 
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto){
-            
             var userFromRepo=await _repo.Login(userForLoginDto.UserName.ToLower(), userForLoginDto.Password);
-
             if(userFromRepo == null)
-                return Unauthorized();
+                return Unauthorized(); 
             
             var claims=new []{
                 new Claim(ClaimTypes.NameIdentifier,userFromRepo.Id.ToString()),
