@@ -1,17 +1,17 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
   <div class="container">
-    &nbsp;&nbsp;<a class="navbar-brand" href="#">Tinder</a>
+    &nbsp;&nbsp;<a class="navbar-brand" [routerLink]="['/home']" >Tinder</a>
 
       <ul *ngIf="loggedIn()" class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Matches
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/members']" >Matches
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lists</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/lists']" >Lists</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Messages</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/messages']" >Messages</a>
         </li>
       </ul>
 
